@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_advertise3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.codemeister.meowreminder.activity.NewCatActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="20dp"
+        android:paddingStart="@dimen/activity_vertical_margin"
+        android:paddingEnd="@dimen/activity_vertical_margin">
+
+        <TextView
+            android:text="@string/cat_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/txtPrice"
+            android:textSize="24sp"
+            android:textColor="@color/colorPrimary" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingEnd="@dimen/activity_vertical_margin"
+            android:paddingStart="@dimen/activity_vertical_margin">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:text="@string/catname"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/catname"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:hint="@string/titleHint"
+                android:inputType="textCapWords"
+                android:maxLines="1"
+                android:padding="10dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:text="@string/catbreed"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/breed"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:hint="@string/breedHint"
+                android:inputType="textCapWords"
+                android:maxLines="1"
+                android:padding="10dp" />
+
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="135dp"
+                android:layout_height="131dp"
+                android:adjustViewBounds="true"
+                app:srcCompat="@drawable/ic_action_camera" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            android:layout_marginTop="@dimen/activity_vertical_margin"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/activity_vertical_margin"
+            android:paddingEnd="@dimen/activity_vertical_margin"
+            android:layout_marginTop="30dp">
+
+            <Button
+                android:id="@+id/btnsend"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:text="@string/btnSend"
+                android:textColor="@color/textColorPrimary"/>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
